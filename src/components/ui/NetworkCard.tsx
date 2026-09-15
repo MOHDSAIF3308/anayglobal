@@ -13,7 +13,7 @@ export function NetworkCard({
   return (
     <article
       className={cn(
-        "group relative flex h-full flex-col border border-taupe bg-cream p-7 transition duration-300 hover:border-gold hover:shadow-(--shadow-card)",
+        "group relative flex h-full flex-col border border-taupe bg-cream p-7 transition duration-300 hover:border-gold hover:shadow-card",
         className,
       )}
     >

@@ -49,7 +49,7 @@ export function Header() {
       )}
     >
       <div className="mx-auto flex h-[4.25rem] max-w-7xl items-center justify-between gap-4 px-5 sm:px-8 lg:px-10">
-        <Link href="/" aria-label="Any Global Services home" className="shrink-0">
+        <Link href="/" aria-label="Anay Global Services home" className="shrink-0">
           <Logo invert={invert} className="max-sm:[&>span:last-child>span:last-child]:hidden" />
         </Link>
 
@@ -81,7 +81,7 @@ export function Header() {
                   <ChevronDown className="h-3.5 w-3.5" />
                 </Link>
                 {servicesOpen ? (
-                  <div className="absolute left-0 top-full w-[22rem] border border-taupe bg-cream py-3 shadow-(--shadow-card)">
+                  <div className="absolute left-0 top-full w-[22rem] border border-taupe bg-cream py-3 shadow-card">
                     {services.map((s) => (
                       <Link
                         key={s.slug}
@@ -123,10 +123,11 @@ export function Header() {
             className={buttonClassName({
               variant: invert ? "gold" : "espresso",
               size: "sm",
-              className: "hidden sm:inline-flex",
+              className: "max-sm:px-3 max-sm:text-[0.62rem]",
             })}
           >
-            Request a Quote
+            <span className="sm:hidden">Quote</span>
+            <span className="hidden sm:inline">Request a Quote</span>
           </QuoteButton>
           <button
             type="button"

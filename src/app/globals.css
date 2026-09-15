@@ -150,3 +150,19 @@ body {
 .skip-link:focus {
   top: 1rem;
 }
+
+@media print {
+  header,
+  footer,
+  .skip-link {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+  }
+
+  a[href]::after {
+    content: none !important;
+  }
+}

@@ -25,9 +25,9 @@ export function Hero() {
           {site.tagline}
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-taupe-dark sm:text-lg">
-          Testing, surveying, inspection and consultancy — one technical
-          collaboration, three Madhya Pradesh offices, and a network that
-          reports as a single file. Formerly {site.formerName}.
+          Consultancy, inspection, surveying and testing — one technical
+          collaboration, headquartered in Indore, and a network that
+          reports as a single file.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
           <Link

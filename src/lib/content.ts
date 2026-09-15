@@ -1,7 +1,6 @@
 export const site = {
-  name: "Any Global Services",
+  name: "Anay Global Services",
   shortName: "AGS",
-  formerName: "Volmaken",
   tagline: "Engineering Data You Can Build On.",
   taglines: [
     "Engineering Data You Can Build On.",
@@ -9,13 +8,13 @@ export const site = {
     "Building Stronger Foundations.",
   ],
   descriptor: "Integrated Technical Collaboration",
-  pillarsLine: "Testing | Surveying | Inspection | Consultancy",
+  pillarsLine: "Consultant | Inspection | Survey | Testing",
   promise: "Accurate Data. Reliable Solutions. Sustainable Tomorrow.",
-  founded: 2016,
-  url: "https://anyglobalservices.com",
-  email: "info@anyglobalservices.com",
-  quotesEmail: "quotes@anyglobalservices.com",
-  phone: "+91 7362 252 400",
+  founded: 2024,
+  url: "https://anayglobalservices.com",
+  email: "info@anayglobalservices.com",
+  quotesEmail: "quotes@anayglobalservices.com",
+  phone: "+91 731 497 2400",
 } as const;
 
 export const nav = [
@@ -30,62 +29,33 @@ export const nav = [
 
 export const offices = [
   {
-    id: "agar",
-    name: "Agar-Malwa Head Office",
-    city: "Agar-Malwa",
-    role: "Headquarters · Laboratory & Coordination",
-    address: [
-      "AGS House, Near Collectorate Road",
-      "Agar-Malwa, Madhya Pradesh 465441",
-    ],
-    phone: "+91 7362 252 400",
-    email: "agar@anyglobalservices.com",
-    mapQuery: "Agar-Malwa, Madhya Pradesh",
-    lat: 23.7116,
-    lng: 76.0157,
-  },
-  {
-    id: "ujjain",
-    name: "Ujjain Office",
-    city: "Ujjain",
-    role: "Field Services · Surveying & Inspection",
-    address: [
-      "2nd Floor, Tower Plaza, Freeganj",
-      "Ujjain, Madhya Pradesh 456010",
-    ],
-    phone: "+91 734 401 2400",
-    email: "ujjain@anyglobalservices.com",
-    mapQuery: "Freeganj, Ujjain, Madhya Pradesh",
-    lat: 23.1765,
-    lng: 75.7885,
-  },
-  {
     id: "indore",
-    name: "Indore Office",
+    name: "Indore Head Office",
     city: "Indore",
-    role: "Consultancy · Network Hub",
+    role: "Head Office · Testing, Surveying & Consultancy",
     address: [
-      "Office 504, Brilliant Sapphire, Vijay Nagar",
-      "Indore, Madhya Pradesh 452010",
+      "206, 2nd Floor, Giriraj Tower",
+      "Bhawar Kuan Square",
+      "Indore, Madhya Pradesh 452001",
     ],
     phone: "+91 731 497 2400",
-    email: "indore@anyglobalservices.com",
-    mapQuery: "Vijay Nagar, Indore, Madhya Pradesh",
-    lat: 22.7533,
-    lng: 75.8937,
+    email: "indore@anayglobalservices.com",
+    mapQuery: "Giriraj Tower, Bhawar Kuan Square, Indore, Madhya Pradesh",
+    lat: 22.6926,
+    lng: 75.8676,
   },
 ] as const;
 
 export const stats = [
   { value: "100+", label: "Projects Delivered" },
   { value: "50+", label: "Institutional Clients" },
-  { value: "3", label: "Offices in Madhya Pradesh" },
-  { value: "9+", label: "Years of Field Practice" },
+  { value: "Indore", label: "Headquarters, MP" },
+  { value: "2024", label: "Established Year" },
 ] as const;
 
 export const trustHighlights = [
-  { kicker: "Established", value: "2016" },
-  { kicker: "Offices", value: "Agar · Ujjain · Indore" },
+  { kicker: "Established", value: "2024" },
+  { kicker: "Office", value: "Bhawar Kuan, Indore" },
   { kicker: "Network", value: "5 Specialist Partners" },
   { kicker: "Focus", value: "Data. Design. Delivery." },
 ] as const;
@@ -103,79 +73,42 @@ export type Service = {
   partner: string;
 };
 
+/* 
+  Order of services: Consultant | Inspection | Survey | Testing
+  01: Engineering, DPR & Turnkey Consultancy (Consultant)
+  02: Inspection & Certification (Inspection)
+  03: Surveying & Geospatial (Survey)
+  04: Civil Material Testing Lab (Testing)
+  05: Chemical & Product Testing (Testing)
+  06: Environmental Services (Testing & Monitoring)
+*/
 export const services: Service[] = [
   {
-    slug: "civil-material-testing",
+    slug: "engineering-dpr-consultancy",
     number: "01",
-    name: "Civil Material Testing Lab",
-    short: "Concrete, soil, steel, aggregates and bitumen tested to the codes that govern your works.",
+    name: "Engineering, DPR & Turnkey Consultancy",
+    short: "From reconnaissance to DPR, design and PMC — engineering that can be built, billed and audited.",
     summary:
-      "A production laboratory that turns samples into decisions — mix designs, compliance reports and field verification for highways, buildings and industrial works.",
-    body: "From Agar-Malwa, AGS operates a civil materials laboratory built around the codes Indian infrastructure actually uses: IS, IRC, MoRTH and project-specific QA plans. We test what is placed in the works — not a brochure version of it — and we write reports that site engineers, consultants and authority laboratories can act on.",
-    image: "/images/lab-civil.jpg",
-    partner: "AGS Core",
+      "Archies Engineers leads design and DPR work inside the AGS network: highways, buildings, industrial plants and water resources, with the testing and survey data already in the room.",
+    body: "Most consultancy is a document factory. Ours is a closed loop: survey and laboratory data feed the design; the design feeds the BOQ; inspection and testing follow the same assumptions. Archies Engineers prepares DPRs, structural and infrastructure designs, and turnkey advisory so clients are not translating between three firms that have never shared a drawing register.",
+    image: "/images/consultancy.jpg",
+    partner: "Archies Engineers",
     offerings: [
-      "Concrete cube, beam and core testing; mix design and trial mixes",
-      "Soil investigation support: CBR, Proctor, Atterberg, grain size",
-      "Steel, aggregates, bitumen, bricks, pavers and masonry units",
-      "Field density, rebound hammer and in-situ verification",
-      "QA/QC documentation aligned to NABL-style protocols",
+      "Detailed Project Reports for roads, buildings and water works",
+      "Structural, civil and infrastructure design",
+      "Quantity estimation, rate analysis and bid engineering",
+      "PMC, peer review and construction-stage support",
+      "Turnkey technical advisory for owners and developers",
     ],
     outcomes: [
-      "Fewer disputes at billing and handover",
-      "Traceable results for authority and lender review",
-      "Mix designs that hold on real materials, not catalogue values",
-    ],
-  },
-  {
-    slug: "environmental-services",
-    number: "02",
-    name: "Environmental Services",
-    short: "Baseline studies, monitoring and compliance that keep projects legally and operationally sound.",
-    summary:
-      "Air, water, noise and stack monitoring plus EIA/EMP support for industry, mining and linear infrastructure — delivered through Aadhar Enviro in the AGS network.",
-    body: "Environmental work only matters if it survives scrutiny. Through Aadhar Enviro we run ambient and source monitoring, prepare the studies regulators expect, and help clients hold consents through construction and operations. The laboratory and the field team work as one file, not two vendors.",
-    image: "/images/environmental.jpg",
-    partner: "Aadhar Enviro",
-    offerings: [
-      "Ambient air, water, noise and soil monitoring",
-      "Stack and process-emission measurements",
-      "EIA, EMP and baseline environmental studies",
-      "Consent-to-establish / operate support and compliance calendars",
-      "Industrial and highway corridor assessments",
-    ],
-    outcomes: [
-      "Clearances that match the project that is actually built",
-      "Monitoring data your EHS team can defend",
-      "One technical language from field to filing",
-    ],
-  },
-  {
-    slug: "chemical-product-testing",
-    number: "03",
-    name: "Chemical & Product Testing",
-    short: "Laboratory analytics for water, chemicals and manufactured products — numbers you can specify against.",
-    summary:
-      "Biosyn brings chemical and product testing into the AGS network so quality, safety and specification questions are answered in the same collaboration as civil and environmental work.",
-    body: "Product and process decisions stall without a lab that understands both the method and the market. Biosyn’s chemical testing sits beside AGS civil and environmental work, so a water sample, a process chemical or a finished product is not an isolated certificate — it is part of the project file.",
-    image: "/images/chemical.jpg",
-    partner: "Biosyn",
-    offerings: [
-      "Drinking water, wastewater and process-water analysis",
-      "Industrial chemicals and raw-material characterisation",
-      "Product quality and specification testing",
-      "Method selection against IS / ISO / client protocols",
-      "Certificate packs for procurement and statutory filings",
-    ],
-    outcomes: [
-      "Specifications that purchasing and plant can share",
-      "Fewer retests caused by incomplete sampling briefs",
-      "A single technical counterpart for mixed lab work",
+      "DPRs that authority reviewers can navigate",
+      "Designs grounded in measured, not assumed, data",
+      "One accountable engineering conversation",
     ],
   },
   {
     slug: "inspection-certification",
-    number: "04",
+    number: "02",
     name: "Inspection & Certification",
     short: "Third-party eyes on vendors, works and systems — inspection that stands up to audit.",
     summary:
@@ -198,14 +131,14 @@ export const services: Service[] = [
   },
   {
     slug: "surveying-geospatial",
-    number: "05",
+    number: "03",
     name: "Surveying & Geospatial",
     short: "Control, topography, alignments and drone mapping — the geometry everything else is built on.",
     summary:
       "Total station, GNSS and UAV photogrammetry for highways, irrigation, industrial plots and urban works, with drawings and GIS that designers can actually use.",
-    body: "Every DPR, every earthwork bill and every alignment argument starts with a survey. AGS field crews establish control, capture terrain and structures, and deliver drawings in the coordinate system the designer specified — not the one that was convenient on the day. Drone mapping is used where it earns its keep: corridors, stockpiles and sites that would take weeks on foot.",
+    body: "Every DPR, every earthwork bill and every alignment argument starts with a survey. Volmaken Engineering field crews establish control, capture terrain and structures, and deliver drawings in the coordinate system the designer specified — not the one that was convenient on the day. Drone mapping is used where it earns its keep: corridors, stockpiles and sites that would take weeks on foot.",
     image: "/images/surveying.jpg",
-    partner: "AGS Core",
+    partner: "Volmaken Engineering Pvt. Ltd.",
     offerings: [
       "Topographic and contour surveys; digital terrain models",
       "DGPS / GNSS control networks and traverse",
@@ -220,26 +153,72 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: "engineering-dpr-consultancy",
-    number: "06",
-    name: "Engineering, DPR & Turnkey Consultancy",
-    short: "From reconnaissance to DPR, design and PMC — engineering that can be built, billed and audited.",
+    slug: "civil-material-testing",
+    number: "04",
+    name: "Civil Material Testing Lab",
+    short: "Concrete, soil, steel, aggregates and bitumen tested to the codes that govern your works.",
     summary:
-      "Archies Engineers leads design and DPR work inside the AGS network: highways, buildings, industrial plants and water resources, with the testing and survey data already in the room.",
-    body: "Most consultancy is a document factory. Ours is a closed loop: survey and laboratory data feed the design; the design feeds the BOQ; inspection and testing follow the same assumptions. Archies Engineers prepares DPRs, structural and infrastructure designs, and turnkey advisory so clients are not translating between three firms that have never shared a drawing register.",
-    image: "/images/consultancy.jpg",
-    partner: "Archies Engineers",
+      "A production laboratory that turns samples into decisions — mix designs, compliance reports and field verification for highways, buildings and industrial works.",
+    body: "From our central materials laboratory, AGS operates a civil testing bench built around the codes Indian infrastructure actually uses: IS, IRC, MoRTH and project-specific QA plans. We test what is placed in the works — not a brochure version of it — and we write reports that site engineers, consultants and authority laboratories can act on.",
+    image: "/images/lab-civil.jpg",
+    partner: "Volmaken Engineering Pvt. Ltd.",
     offerings: [
-      "Detailed Project Reports for roads, buildings and water works",
-      "Structural, civil and infrastructure design",
-      "Quantity estimation, rate analysis and bid engineering",
-      "PMC, peer review and construction-stage support",
-      "Turnkey technical advisory for owners and developers",
+      "Concrete cube, beam and core testing; mix design and trial mixes",
+      "Soil investigation support: CBR, Proctor, Atterberg, grain size",
+      "Steel, aggregates, bitumen, bricks, pavers and masonry units",
+      "Field density, rebound hammer and in-situ verification",
+      "QA/QC documentation aligned to NABL-style protocols",
     ],
     outcomes: [
-      "DPRs that authority reviewers can navigate",
-      "Designs grounded in measured, not assumed, data",
-      "One accountable engineering conversation",
+      "Fewer disputes at billing and handover",
+      "Traceable results for authority and lender review",
+      "Mix designs that hold on real materials, not catalogue values",
+    ],
+  },
+  {
+    slug: "chemical-product-testing",
+    number: "05",
+    name: "Chemical & Product Testing",
+    short: "Laboratory analytics for water, chemicals and manufactured products — numbers you can specify against.",
+    summary:
+      "Biosyn brings chemical and product testing into the AGS network so quality, safety and specification questions are answered in the same collaboration as civil and environmental work.",
+    body: "Product and process decisions stall without a lab that understands both the method and the market. Biosyn’s chemical testing sits beside AGS civil and environmental work, so a water sample, a process chemical or a finished product is not an isolated certificate — it is part of the project file.",
+    image: "/images/chemical.jpg",
+    partner: "Biosyn",
+    offerings: [
+      "Drinking water, wastewater and process-water analysis",
+      "Industrial chemicals and raw-material characterisation",
+      "Product quality and specification testing",
+      "Method selection against IS / ISO / client protocols",
+      "Certificate packs for procurement and statutory filings",
+    ],
+    outcomes: [
+      "Specifications that purchasing and plant can share",
+      "Fewer retests caused by incomplete sampling briefs",
+      "A single technical counterpart for mixed lab work",
+    ],
+  },
+  {
+    slug: "environmental-services",
+    number: "06",
+    name: "Environmental Services",
+    short: "Baseline studies, monitoring and compliance that keep projects legally and operationally sound.",
+    summary:
+      "Air, water, noise and stack monitoring plus EIA/EMP support for industry, mining and linear infrastructure — delivered through Aadhar Enviro in the AGS network.",
+    body: "Environmental work only matters if it survives scrutiny. Through Aadhar Enviro we run ambient and source monitoring, prepare the studies regulators expect, and help clients hold consents through construction and operations. The laboratory and the field team work as one file, not two vendors.",
+    image: "/images/environmental.jpg",
+    partner: "Aadhar Enviro",
+    offerings: [
+      "Ambient air, water, noise and soil monitoring",
+      "Stack and process-emission measurements",
+      "EIA, EMP and baseline environmental studies",
+      "Consent-to-establish / operate support and compliance calendars",
+      "Industrial and highway corridor assessments",
+    ],
+    outcomes: [
+      "Clearances that match the project that is actually built",
+      "Monitoring data your EHS team can defend",
+      "One technical language from field to filing",
     ],
   },
 ];
@@ -254,22 +233,15 @@ export type Partner = {
   accent: string;
 };
 
+/* 
+  Five practices ordered 2 - 5 - 3 - 4 - 1:
+  1 (orig 2): Aadhar Enviro
+  2 (orig 5): Archies Engineers
+  3 (orig 3): Biosyn
+  4 (orig 4): True Certificate
+  5 (orig 1): Volmaken Engineering Pvt. Ltd. (renamed from AGS Core)
+*/
 export const partners: Partner[] = [
-  {
-    slug: "ags-core",
-    name: "AGS Core",
-    role: "Testing · Surveying · Coordination",
-    summary:
-      "The coordinating heart of the network — laboratories, field survey and the client interface that holds the file together.",
-    body: "AGS Core is the successor practice to Volmaken: civil material testing, surveying, and project coordination from Agar-Malwa, with offices in Ujjain and Indore. When a client calls AGS, this is the desk that answers — and the desk that assigns the right specialist partner without making the client run a mini-tender.",
-    capabilities: [
-      "Civil material testing laboratory",
-      "Topographic, GNSS and drone survey",
-      "Project coordination and single-window delivery",
-      "QA documentation and client reporting",
-    ],
-    accent: "Laboratory & field",
-  },
   {
     slug: "aadhar-enviro",
     name: "Aadhar Enviro",
@@ -284,6 +256,21 @@ export const partners: Partner[] = [
       "Industrial and corridor assessments",
     ],
     accent: "Environment",
+  },
+  {
+    slug: "archies-engineers",
+    name: "Archies Engineers",
+    role: "DPR · Design · Turnkey Consultancy",
+    summary:
+      "Engineering design and DPR leadership that consumes AGS data instead of reinventing it.",
+    body: "Archies Engineers is the design and consultancy practice in the network. DPRs, structural and infrastructure design, quantities and PMC sit on the same survey and lab evidence the rest of AGS produces.",
+    capabilities: [
+      "DPR and bid engineering",
+      "Civil and structural design",
+      "Quantities, rates and construction support",
+      "Turnkey owner’s engineer roles",
+    ],
+    accent: "Design",
   },
   {
     slug: "biosyn",
@@ -316,46 +303,40 @@ export const partners: Partner[] = [
     accent: "Assurance",
   },
   {
-    slug: "archies-engineers",
-    name: "Archies Engineers",
-    role: "DPR · Design · Turnkey Consultancy",
+    slug: "volmaken-engineering",
+    name: "Volmaken Engineering Pvt. Ltd.",
+    role: "Testing · Surveying · Coordination",
     summary:
-      "Engineering design and DPR leadership that consumes AGS data instead of reinventing it.",
-    body: "Archies Engineers is the design and consultancy practice in the network. DPRs, structural and infrastructure design, quantities and PMC sit on the same survey and lab evidence the rest of AGS produces.",
+      "The coordinating heart of the network — civil material testing, surveying, and single-window client delivery.",
+    body: "Volmaken Engineering Pvt. Ltd. leads civil material testing, surveying, and project coordination from our Indore headquarters. When a client calls AGS, this is the desk that answers — and the desk that assigns the right specialist partner without making the client run a mini-tender.",
     capabilities: [
-      "DPR and bid engineering",
-      "Civil and structural design",
-      "Quantities, rates and construction support",
-      "Turnkey owner’s engineer roles",
+      "Civil material testing laboratory",
+      "Topographic, GNSS and drone survey",
+      "Project coordination and single-window delivery",
+      "QA documentation and client reporting",
     ],
-    accent: "Design",
+    accent: "Laboratory & field",
   },
 ];
 
 export const journey = [
   {
-    year: "2016",
-    place: "Agar-Malwa",
-    title: "The laboratory opens",
-    body: "Volmaken is founded in Agar-Malwa as a civil material testing practice — close to the works, not parked in a metro.",
-  },
-  {
-    year: "2019",
-    place: "Ujjain",
-    title: "Field services expand",
-    body: "A Ujjain office is established. Surveying, in-situ testing and inspection join the laboratory so projects can be served end-to-end in the region.",
-  },
-  {
-    year: "2022",
-    place: "Network",
-    title: "Specialists come into the file",
-    body: "Environmental, chemical and certification partners begin working as one technical collaboration rather than a chain of subcontractors.",
+    year: "2024",
+    place: "Indore",
+    title: "Foundation & Operations",
+    body: "Established in Indore at Bhawar Kuan Square, bringing specialized consulting, inspection, surveying and testing under one roof.",
   },
   {
     year: "2025",
-    place: "Indore",
-    title: "Any Global Services",
-    body: "The Indore office opens. The practice is rebranded as Any Global Services — an integrated technical network with a single client interface.",
+    place: "Central India",
+    title: "Five-Practice Technical Collaboration",
+    body: "Integrating environmental, chemical, inspection and design engineering practices into a seamless single-window model.",
+  },
+  {
+    year: "2026",
+    place: "Scale",
+    title: "Infrastructure Delivery",
+    body: "Supporting major highways, urban works, and industrial clients with audit-ready engineering data and DPR advisory.",
   },
 ];
 
@@ -374,7 +355,7 @@ export const values = [
   },
   {
     title: "Close to the works",
-    body: "Agar-Malwa, Ujjain and Indore are not satellite plaques. They are where the crews actually start the day.",
+    body: "Our Indore head office and regional field crews are where the teams actually start the day.",
   },
 ];
 
@@ -428,7 +409,7 @@ export const projects: Project[] = [
     slug: "institutional-buildings",
     sector: "Buildings",
     name: "Institutional & Commercial Buildings",
-    location: "Ujjain · Indore · Agar",
+    location: "Indore · Malwa Region",
     summary:
       "Concrete, steel and geotechnical support for campuses, public buildings and commercial developments.",
     image: "/images/project-building.jpg",
@@ -472,6 +453,17 @@ export const projects: Project[] = [
 ];
 
 export const clients = [
+  { id: "nhai", name: "NHAI" },
+  { id: "mppwd", name: "MPPWD" },
+  { id: "tata", name: "TATA" },
+  { id: "ntpc", name: "NTPC" },
+  { id: "jsw", name: "JSW" },
+  { id: "adani", name: "Adani" },
+  { id: "ultratech", name: "UltraTech" },
+  { id: "state-ulbs", name: "State ULBs" },
+];
+
+export const clientNames = [
   "NHAI",
   "MPPWD",
   "TATA",
@@ -608,19 +600,19 @@ export const resourceLinks = [
 export const whyTrust = [
   {
     title: "Regional, not remote",
-    body: "Work is run from Agar-Malwa, Ujjain and Indore — the same geography as most of our sites.",
+    body: "Work is run from our central headquarters in Indore — the same geography as our sites.",
   },
   {
     title: "Integrated on purpose",
-    body: "Testing, survey, environment, inspection and design share a drawing register and a client lead.",
+    body: "Consultancy, inspection, survey, and testing share a drawing register and a single client lead.",
   },
   {
     title: "Written to be audited",
     body: "Certificates, ITPs and DPRs are prepared for the reader who was not there.",
   },
   {
-    title: "Continuity since 2016",
-    body: "The Volmaken laboratory practice is still the spine. The network is how it grew, not a rebrand over empty rooms.",
+    title: "Established 2024",
+    body: "A dedicated engineering network built from the ground up for rigorous data, defensible reporting, and turnkey delivery.",
   },
 ];
 

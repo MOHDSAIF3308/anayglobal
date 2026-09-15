@@ -12,11 +12,11 @@ export function Intro() {
               {site.promise}
             </p>
             <p className="text-base leading-relaxed text-stone lg:col-span-5">
-              Any Global Services is the name on the door. Behind it is a
-              laboratory practice born in Agar-Malwa in 2016, a surveying and
-              inspection bench in Ujjain, a consultancy desk in Indore, and four
-              specialist partners who already share the drawing register. We
-              sell measured work — not a slide about synergy.
+              Anay Global Services is the name on the door. Established in 2024
+              with headquarters in Indore, bringing together surveying, inspection,
+              civil testing and consultancy alongside our specialist partners who
+              share the drawing register. We sell measured work — not a slide about
+              synergy.
             </p>
           </div>
         </Reveal>

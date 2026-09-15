@@ -11,8 +11,7 @@ export function Footer() {
           <div className="lg:col-span-4">
             <Logo invert />
             <p className="mt-5 max-w-sm text-sm leading-relaxed">
-              {site.descriptor}. {site.pillarsLine}. Formerly {site.formerName},
-              established {site.founded}.
+              {site.descriptor}. {site.pillarsLine}. Established {site.founded}.
             </p>
             <p className="mt-4 font-display text-xl text-gold">{site.promise}</p>
           </div>
@@ -49,14 +48,17 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <p className="dark-kicker">Offices</p>
+              <p className="dark-kicker">Head Office</p>
               <ul className="mt-4 space-y-4">
                 {offices.map((o) => (
                   <li key={o.id} className="text-sm">
-                    <p className="text-cream">{o.city}</p>
+                    <p className="text-cream font-medium">{o.name}</p>
+                    <p className="text-xs text-taupe-dark mt-0.5">
+                      {o.address[0]}, {o.address[1]}
+                    </p>
                     <a
                       href={`tel:${o.phone.replace(/\s/g, "")}`}
-                      className="hover:text-gold"
+                      className="block mt-1 text-gold hover:underline"
                     >
                       {o.phone}
                     </a>

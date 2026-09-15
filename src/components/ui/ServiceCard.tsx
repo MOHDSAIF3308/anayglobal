@@ -15,7 +15,7 @@ export function ServiceCard({
     <Link
       href={`/services/${service.slug}`}
       className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-sm border border-taupe bg-cream shadow-(--shadow-card) transition duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-(--shadow-lift)",
+        "group flex h-full flex-col overflow-hidden rounded-sm border border-taupe bg-cream shadow-card transition duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-lift",
         className,
       )}
     >

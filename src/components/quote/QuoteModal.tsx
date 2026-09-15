@@ -36,7 +36,7 @@ export function QuoteModal() {
         role="dialog"
         aria-modal="true"
         aria-labelledby="quote-title"
-        className="relative z-10 max-h-[92svh] w-full overflow-y-auto bg-cream shadow-(--shadow-lift) sm:max-w-2xl sm:rounded-sm"
+        className="relative z-10 max-h-[92svh] w-full overflow-y-auto bg-cream shadow-lift sm:max-w-2xl sm:rounded-sm"
       >
         <div className="flex items-start justify-between border-b border-taupe px-6 py-5 sm:px-8">
           <div>
@@ -58,7 +58,7 @@ export function QuoteModal() {
           </button>
         </div>
         <div className="px-6 py-6 sm:px-8 sm:py-8">
-          <QuoteForm compact onSuccess={closeQuote} />
+          <QuoteForm compact />
         </div>
       </div>
     </div>

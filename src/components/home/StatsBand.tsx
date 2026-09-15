@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { stats, clients } from "@/lib/content";
+import { ClientLogo } from "@/components/ui/ClientLogos";
 
 export function StatsBand() {
   return (
@@ -16,16 +17,18 @@ export function StatsBand() {
           ))}
         </div>
       </Container>
-      <div className="mt-12 overflow-hidden border-y border-taupe bg-cream-dark py-5">
-        <div className="marquee-track flex w-max gap-12 px-8">
-          {[...clients, ...clients].map((c, i) => (
-            <span
-              key={`${c}-${i}`}
-              className="font-display text-2xl tracking-wide text-espresso/70"
+      <div className="mt-12 overflow-hidden border-y border-taupe bg-cream-dark py-6">
+        <div className="marquee-track flex w-max items-center gap-10 px-8">
+          {[...clients, ...clients, ...clients].map((c, i) => (
+            <div
+              key={`${c.id}-${i}`}
+              className="flex items-center gap-10"
             >
-              {c}
-              <span className="ml-12 text-gold">·</span>
-            </span>
+              <div className="flex items-center rounded-md border border-taupe/80 bg-cream/95 px-4 py-2.5 shadow-xs transition duration-200 hover:border-gold hover:shadow-card">
+                <ClientLogo id={c.id} className="h-9 w-auto" />
+              </div>
+              <span className="text-gold text-xl" aria-hidden>·</span>
+            </div>
           ))}
         </div>
       </div>

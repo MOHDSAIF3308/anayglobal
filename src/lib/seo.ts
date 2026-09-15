@@ -38,14 +38,14 @@ export function pageMetadata({
 }
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || site.url),
   title: {
     default: defaultTitle,
     template: `%s — ${site.shortName}`,
   },
   description: defaultDescription,
   keywords: [
-    "Any Global Services",
+    "Anay Global Services",
     "AGS",
     "Volmaken",
     "material testing laboratory Madhya Pradesh",
@@ -74,6 +74,9 @@ export const defaultMetadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
 };
 

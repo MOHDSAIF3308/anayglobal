@@ -62,7 +62,7 @@ export function Logo({
               word,
             )}
           >
-            Any Global Services
+            Anay Global Services
           </span>
           <span className={cn("mt-0.5 text-[0.62rem] tracking-[0.14em]", sub)}>
             Integrated Technical Collaboration
