@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 type Payload = {
   name?: string;
   organization?: string;

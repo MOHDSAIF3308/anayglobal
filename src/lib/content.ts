@@ -1,6 +1,7 @@
 export const site = {
   name: "Anay Global Services",
   shortName: "AGS",
+  formerName: "Volmaken",
   tagline: "Engineering Data You Can Build On.",
   taglines: [
     "Engineering Data You Can Build On.",

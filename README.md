@@ -2,7 +2,7 @@
 
 Premium marketing site for **Anay Global Services** — an integrated technical collaboration for testing, surveying, inspection and consultancy. Formerly Volmaken.
 
-Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes are **Edge-compatible** and deploy to **Cloudflare Pages + Workers** on the free tier.
+Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes deploy to a **Cloudflare Worker** on the free tier.
 
 ## Local development
 
@@ -44,7 +44,7 @@ The **Request a Quote** control is sticky in the header and opens a modal. The s
 
 Copy `.env.example` to `.env.local` (or Cloudflare Pages environment variables / `.dev.vars`).
 
-## Cloudflare Pages + Workers
+## Cloudflare Workers
 
 This project is wired for **OpenNext Cloudflare** (`@opennextjs/cloudflare`) — the current replacement for `@cloudflare/next-on-pages`.
 
@@ -54,12 +54,27 @@ npm run cf:preview   # wrangler dev against the build
 npm run cf:deploy    # deploy to Cloudflare (free tier)
 ```
 
-In the Cloudflare dashboard:
+This app uses a server-rendered Next.js route and an API route, so deploy it as a **Worker** (not a static Cloudflare Pages project).
 
-1. Create a Pages project (or deploy via Wrangler).
-2. Set compatibility flags: `nodejs_compat`.
-3. Add the env vars from `.env.example` if you want the form to deliver mail.
-4. Bind nothing else — no D1 / KV / R2 is required.
+When importing the GitHub repository in **Workers & Pages → Create application → Import a repository**, use:
+
+| Dashboard field | Value |
+| --- | --- |
+| Project name | `anayglobal` |
+| Production branch | `main` |
+| Build command | `npm run cf:build` |
+| Deploy command | `npx @opennextjs/cloudflare deploy` |
+| Non-production deploy command | `npx @opennextjs/cloudflare upload` |
+| Root directory / Path | `/` |
+| API token | Create a new token (for example, `Workers Builds – anayglobal`) |
+
+Then add runtime environment variables in **Worker → Settings → Variables and Secrets** if you want the quote form to deliver mail:
+
+1. Set `WEB3FORMS_ACCESS_KEY` *or* `RESEND_API_KEY` as a secret. For Resend, also set `QUOTE_FROM_EMAIL`; `QUOTE_TO_EMAIL` is optional and defaults to `quotes@anayglobalservices.com`.
+2. Set compatibility flag `nodejs_compat` (already configured in `wrangler.jsonc`).
+3. Bind nothing else — no D1 / KV / R2 is required.
+
+Push to `main` to deploy production. Push another branch to create a preview version.
 
 `next/image` is set to `unoptimized: true` so the site does not depend on Next’s Node image optimizer.
 
