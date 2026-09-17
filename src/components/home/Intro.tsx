@@ -12,7 +12,7 @@ export function Intro() {
               {site.promise}
             </p>
             <p className="text-base leading-relaxed text-stone lg:col-span-5">
-              Anay Global Services is the name on the door. Established in 2024
+              Anay Consultants & Engineers is the name on the door. Established in 2024
               with headquarters in Indore, bringing together surveying, inspection,
               civil testing and consultancy alongside our specialist partners who
               share the drawing register. We sell measured work — not a slide about

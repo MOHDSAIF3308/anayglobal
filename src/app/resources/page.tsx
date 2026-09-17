@@ -12,7 +12,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Resources",
   description:
-    "AGS knowledge hub — notes on testing, surveying, environmental clearances and inspection, plus the company profile and useful standards links.",
+    "ACE knowledge hub — notes on testing, surveying, environmental clearances and inspection, plus the company profile and useful standards links.",
   path: "/resources",
 });
 
@@ -32,7 +32,7 @@ export default function ResourcesPage() {
             <div className="sm:col-span-8">
               <p className="dark-kicker">Company profile</p>
               <h2 className="mt-3 font-display text-3xl text-cream sm:text-4xl">
-                Download the AGS profile.
+                Download the ACE profile.
               </h2>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-taupe-dark">
                 Network model, six pillars, office credentials and company

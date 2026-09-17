@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Anay Global Services — Engineering Data You Can Build On.";
+export const alt = "Anay Consultants & Engineers — Engineering Data You Can Build On.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -38,9 +38,9 @@ export default function OpenGraphImage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ fontSize: 18, letterSpacing: 6, color: "#C9A66B" }}>
-              AGS
+              ACE
             </div>
-            <div style={{ fontSize: 28, marginTop: 4 }}>Anay Global Services</div>
+            <div style={{ fontSize: 28, marginTop: 4 }}>Anay Consultants & Engineers</div>
           </div>
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>

@@ -10,7 +10,7 @@ export function Hero() {
     <section className="relative isolate min-h-[100svh] overflow-hidden bg-espresso-dark">
       <Image
         src="/images/hero.jpg"
-        alt="Construction and infrastructure works at golden hour — the field conditions AGS measures and certifies."
+        alt="Construction and infrastructure works at golden hour — the field conditions ACE measures and certifies."
         fill
         priority
         sizes="100vw"
@@ -20,11 +20,14 @@ export function Hero() {
       <div className="absolute inset-0 bg-linear-to-t from-espresso-dark/90 via-transparent to-espresso-dark/40" />
 
       <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-end px-5 pb-28 pt-32 sm:px-8 sm:pb-32 lg:px-10">
-        <p className="dark-kicker">{site.descriptor}</p>
-        <h1 className="mt-4 max-w-4xl font-display text-5xl font-semibold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-7xl">
-          {site.tagline}
+        <p className="dark-kicker">ACE · {site.descriptor}</p>
+        <h1 className="mt-4 max-w-5xl font-display text-5xl font-semibold leading-[1.05] tracking-tight text-cream sm:text-6xl lg:text-7xl">
+          {site.name}
         </h1>
-        <p className="mt-6 max-w-xl text-base leading-relaxed text-taupe-dark sm:text-lg">
+        <p className="mt-4 font-display text-2xl leading-tight text-gold sm:text-3xl">
+          {site.tagline}
+        </p>
+        <p className="mt-5 max-w-xl text-base leading-relaxed text-taupe-dark sm:text-lg">
           Consultancy, inspection, surveying and testing — one technical
           collaboration, headquartered in Indore, and a network that
           reports as a single file.

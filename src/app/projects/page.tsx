@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Projects",
   description:
-    "Featured AGS work across highways, buildings, industry, water resources, surveying and energy — with institutional clients including NHAI, MPPWD, TATA, NTPC, JSW, Adani and UltraTech.",
+    "Featured ACE work across highways, buildings, industry, water resources, surveying and energy — with institutional clients including NHAI, MPPWD, TATA, NTPC, JSW, Adani and UltraTech.",
   path: "/projects",
 });
 

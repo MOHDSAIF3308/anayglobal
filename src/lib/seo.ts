@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { site } from "./content";
 
-const defaultTitle = `${site.name} (AGS) — ${site.tagline}`;
+const defaultTitle = `${site.name} (ACE) — ${site.tagline}`;
 const defaultDescription = `${site.name} is an integrated technical collaboration for testing, surveying, inspection and consultancy. Formerly Volmaken. Offices in Agar-Malwa, Ujjain and Indore.`;
 
 export function pageMetadata({
@@ -45,8 +45,8 @@ export const defaultMetadata: Metadata = {
   },
   description: defaultDescription,
   keywords: [
-    "Anay Global Services",
-    "AGS",
+    "Anay Consultants & Engineers",
+    "ACE",
     "Volmaken",
     "material testing laboratory Madhya Pradesh",
     "civil engineering consultancy Indore",
@@ -95,7 +95,7 @@ export function organizationJsonLd() {
     areaServed: "IN",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "AGS House, Near Collectorate Road",
+      streetAddress: "ACE House, Near Collectorate Road",
       addressLocality: "Agar-Malwa",
       addressRegion: "Madhya Pradesh",
       postalCode: "465441",

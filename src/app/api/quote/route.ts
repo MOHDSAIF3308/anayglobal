@@ -64,8 +64,8 @@ export async function POST(request: Request) {
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: web3,
-          subject: `AGS quote request — ${name}`,
-          from_name: "AGS website",
+          subject: `ACE quote request — ${name}`,
+          from_name: "ACE website",
           name,
           email,
           phone,
@@ -84,10 +84,10 @@ export async function POST(request: Request) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: process.env.QUOTE_FROM_EMAIL || "AGS Website <noreply@anayglobalservices.com>",
+          from: process.env.QUOTE_FROM_EMAIL || "ACE Website <noreply@anayglobalservices.com>",
           to: [to],
           reply_to: email,
-          subject: `AGS quote request — ${name}`,
+          subject: `ACE quote request — ${name}`,
           text: summary,
         }),
       });

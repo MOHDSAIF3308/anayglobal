@@ -16,7 +16,7 @@ export function NetworkPreview() {
               number="02"
               kicker="Technical network"
               title="Five practices. One client conversation."
-              lede="Aadhar Enviro, Archies Engineers, Biosyn, True Certificate and Volmaken Engineering Pvt. Ltd. work as an integrated collaboration — coordinated under Anay Global Services."
+              lede="Aadhar Enviro, Archies Engineers, Biosyn, True Certificate and Volmaken Engineering Pvt. Ltd. work as an integrated collaboration — coordinated under Anay Consultants & Engineers."
             />
             <Link
               href="/network"

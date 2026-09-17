@@ -7,7 +7,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Contact / Request a Quote",
   description:
-    "Request a quote from Anay Global Services. Head office at Bhawar Kuan Square, Indore — consulting, inspection, survey and testing desks.",
+    "Request a quote from Anay Consultants & Engineers. Head office at Bhawar Kuan Square, Indore — consulting, inspection, survey and testing desks.",
   path: "/contact",
 });
 
@@ -98,7 +98,7 @@ export default function ContactPage() {
           <p className="kicker mb-4">Map · Indore, Madhya Pradesh</p>
           <div className="overflow-hidden border border-taupe bg-taupe">
             <iframe
-              title="AGS Head Office at Bhawar Kuan Square, Indore"
+              title="ACE Head Office at Bhawar Kuan Square, Indore"
               src={mapSrc}
               className="h-[420px] w-full grayscale contrast-125"
               loading="lazy"

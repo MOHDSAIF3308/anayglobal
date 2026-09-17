@@ -1,6 +1,6 @@
-# Anay Global Services (AGS)
+# Anay Consultants & Engineers (ACE)
 
-Premium marketing site for **Anay Global Services** — an integrated technical collaboration for testing, surveying, inspection and consultancy. Formerly Volmaken.
+Premium marketing site for **Anay Consultants & Engineers** — an integrated technical collaboration for testing, surveying, inspection and consultancy. Formerly Volmaken.
 
 Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes deploy to a **Cloudflare Worker** on the free tier.
 
@@ -101,6 +101,6 @@ Copy, offices, services, partners, projects and articles are centralised in `src
 
 ## Brand line
 
-Anay Global Services (AGS) — Integrated Technical Collaboration  
+Anay Consultants & Engineers (ACE) — Integrated Technical Collaboration
 Testing | Surveying | Inspection | Consultancy  
 Accurate Data. Reliable Solutions. Sustainable Tomorrow.

@@ -1,6 +1,6 @@
 export const site = {
-  name: "Anay Global Services",
-  shortName: "AGS",
+  name: "Anay Consultants & Engineers",
+  shortName: "ACE",
   formerName: "Volmaken",
   tagline: "Engineering Data You Can Build On.",
   taglines: [
@@ -90,7 +90,7 @@ export const services: Service[] = [
     name: "Engineering, DPR & Turnkey Consultancy",
     short: "From reconnaissance to DPR, design and PMC — engineering that can be built, billed and audited.",
     summary:
-      "Archies Engineers leads design and DPR work inside the AGS network: highways, buildings, industrial plants and water resources, with the testing and survey data already in the room.",
+      "Archies Engineers leads design and DPR work inside the ACE network: highways, buildings, industrial plants and water resources, with the testing and survey data already in the room.",
     body: "Most consultancy is a document factory. Ours is a closed loop: survey and laboratory data feed the design; the design feeds the BOQ; inspection and testing follow the same assumptions. Archies Engineers prepares DPRs, structural and infrastructure designs, and turnkey advisory so clients are not translating between three firms that have never shared a drawing register.",
     image: "/images/consultancy.jpg",
     partner: "Archies Engineers",
@@ -114,7 +114,7 @@ export const services: Service[] = [
     short: "Third-party eyes on vendors, works and systems — inspection that stands up to audit.",
     summary:
       "True Certificate provides independent inspection, vendor assessment and certification support so owners and PMC teams are not marking their own homework.",
-    body: "Capital projects fail quietly in the supply chain: a mill certificate that was never verified, a weld that was never witnessed, a vendor that was never walked. True Certificate gives AGS clients an independent inspection layer — staged, documented and written for the people who sign the next invoice.",
+    body: "Capital projects fail quietly in the supply chain: a mill certificate that was never verified, a weld that was never witnessed, a vendor that was never walked. True Certificate gives ACE clients an independent inspection layer — staged, documented and written for the people who sign the next invoice.",
     image: "/images/inspection.jpg",
     partner: "True Certificate",
     offerings: [
@@ -160,7 +160,7 @@ export const services: Service[] = [
     short: "Concrete, soil, steel, aggregates and bitumen tested to the codes that govern your works.",
     summary:
       "A production laboratory that turns samples into decisions — mix designs, compliance reports and field verification for highways, buildings and industrial works.",
-    body: "From our central materials laboratory, AGS operates a civil testing bench built around the codes Indian infrastructure actually uses: IS, IRC, MoRTH and project-specific QA plans. We test what is placed in the works — not a brochure version of it — and we write reports that site engineers, consultants and authority laboratories can act on.",
+    body: "From our central materials laboratory, ACE operates a civil testing bench built around the codes Indian infrastructure actually uses: IS, IRC, MoRTH and project-specific QA plans. We test what is placed in the works — not a brochure version of it — and we write reports that site engineers, consultants and authority laboratories can act on.",
     image: "/images/lab-civil.jpg",
     partner: "Volmaken Engineering Pvt. Ltd.",
     offerings: [
@@ -182,8 +182,8 @@ export const services: Service[] = [
     name: "Chemical & Product Testing",
     short: "Laboratory analytics for water, chemicals and manufactured products — numbers you can specify against.",
     summary:
-      "Biosyn brings chemical and product testing into the AGS network so quality, safety and specification questions are answered in the same collaboration as civil and environmental work.",
-    body: "Product and process decisions stall without a lab that understands both the method and the market. Biosyn’s chemical testing sits beside AGS civil and environmental work, so a water sample, a process chemical or a finished product is not an isolated certificate — it is part of the project file.",
+      "Biosyn brings chemical and product testing into the ACE network so quality, safety and specification questions are answered in the same collaboration as civil and environmental work.",
+    body: "Product and process decisions stall without a lab that understands both the method and the market. Biosyn’s chemical testing sits beside ACE civil and environmental work, so a water sample, a process chemical or a finished product is not an isolated certificate — it is part of the project file.",
     image: "/images/chemical.jpg",
     partner: "Biosyn",
     offerings: [
@@ -205,7 +205,7 @@ export const services: Service[] = [
     name: "Environmental Services",
     short: "Baseline studies, monitoring and compliance that keep projects legally and operationally sound.",
     summary:
-      "Air, water, noise and stack monitoring plus EIA/EMP support for industry, mining and linear infrastructure — delivered through Aadhar Enviro in the AGS network.",
+      "Air, water, noise and stack monitoring plus EIA/EMP support for industry, mining and linear infrastructure — delivered through Aadhar Enviro in the ACE network.",
     body: "Environmental work only matters if it survives scrutiny. Through Aadhar Enviro we run ambient and source monitoring, prepare the studies regulators expect, and help clients hold consents through construction and operations. The laboratory and the field team work as one file, not two vendors.",
     image: "/images/environmental.jpg",
     partner: "Aadhar Enviro",
@@ -240,7 +240,7 @@ export type Partner = {
   2 (orig 5): Archies Engineers
   3 (orig 3): Biosyn
   4 (orig 4): True Certificate
-  5 (orig 1): Volmaken Engineering Pvt. Ltd. (renamed from AGS Core)
+  5 (orig 1): Volmaken Engineering Pvt. Ltd. (renamed from ACE Core)
 */
 export const partners: Partner[] = [
   {
@@ -249,7 +249,7 @@ export const partners: Partner[] = [
     role: "Environment · Monitoring · Compliance",
     summary:
       "Environmental baseline, monitoring and statutory studies for industry and infrastructure.",
-    body: "Aadhar Enviro extends AGS into the environmental sciences: ambient and source monitoring, EIA/EMP support, and the compliance calendar that plants and linear projects cannot afford to improvise.",
+    body: "Aadhar Enviro extends ACE into the environmental sciences: ambient and source monitoring, EIA/EMP support, and the compliance calendar that plants and linear projects cannot afford to improvise.",
     capabilities: [
       "Air, water, noise and stack monitoring",
       "EIA / EMP and baseline studies",
@@ -263,8 +263,8 @@ export const partners: Partner[] = [
     name: "Archies Engineers",
     role: "DPR · Design · Turnkey Consultancy",
     summary:
-      "Engineering design and DPR leadership that consumes AGS data instead of reinventing it.",
-    body: "Archies Engineers is the design and consultancy practice in the network. DPRs, structural and infrastructure design, quantities and PMC sit on the same survey and lab evidence the rest of AGS produces.",
+      "Engineering design and DPR leadership that consumes ACE data instead of reinventing it.",
+    body: "Archies Engineers is the design and consultancy practice in the network. DPRs, structural and infrastructure design, quantities and PMC sit on the same survey and lab evidence the rest of ACE produces.",
     capabilities: [
       "DPR and bid engineering",
       "Civil and structural design",
@@ -309,7 +309,7 @@ export const partners: Partner[] = [
     role: "Testing · Surveying · Coordination",
     summary:
       "The coordinating heart of the network — civil material testing, surveying, and single-window client delivery.",
-    body: "Volmaken Engineering Pvt. Ltd. leads civil material testing, surveying, and project coordination from our Indore headquarters. When a client calls AGS, this is the desk that answers — and the desk that assigns the right specialist partner without making the client run a mini-tender.",
+    body: "Volmaken Engineering Pvt. Ltd. leads civil material testing, surveying, and project coordination from our Indore headquarters. When a client calls ACE, this is the desk that answers — and the desk that assigns the right specialist partner without making the client run a mini-tender.",
     capabilities: [
       "Civil material testing laboratory",
       "Topographic, GNSS and drone survey",
@@ -517,7 +517,7 @@ export const articles: Article[] = [
     read: "6 min",
     body: [
       "Most contractors discover their laboratory at the first recovery statement. Cubes are missing IDs, the method on the certificate does not match the QA plan, and nobody can say which batch of cement the trial mix used. NABL alignment is not a logo. It is a habit of traceability.",
-      "An AGS report is written so that a junior engineer at the authority laboratory can reconstruct the test without calling us. Sample identity, curing, method, equipment and uncertainty sit in the same place every time. That is what ‘NABL-aligned’ means in practice, whether or not a particular parameter is on a formal scope.",
+      "An ACE report is written so that a junior engineer at the authority laboratory can reconstruct the test without calling us. Sample identity, curing, method, equipment and uncertainty sit in the same place every time. That is what ‘NABL-aligned’ means in practice, whether or not a particular parameter is on a formal scope.",
       "If you are writing a QA plan, specify the methods and the identification scheme — not merely ‘reputed NABL lab’. The laboratory you appoint should be able to show you a sample report before the first cube is cast.",
     ],
   },
@@ -531,7 +531,7 @@ export const articles: Article[] = [
     read: "7 min",
     body: [
       "A drone does not know where it is until you tell it. Ground control, check points and a traverse that would satisfy a total-station survey are what make an orthomosaic a survey, not a film.",
-      "For highway and irrigation corridors, photogrammetry earns its keep on terrain, stockpiles, borrow areas and as-built surfaces. It does not replace a prism on a boundary stone, a bridge soffit or a dense urban facade. AGS crews establish GNSS control first, fly second, and deliver a DTM in the coordinate system named in the DPR brief.",
+      "For highway and irrigation corridors, photogrammetry earns its keep on terrain, stockpiles, borrow areas and as-built surfaces. It does not replace a prism on a boundary stone, a bridge soffit or a dense urban facade. ACE crews establish GNSS control first, fly second, and deliver a DTM in the coordinate system named in the DPR brief.",
       "If a consultant offers ‘drone survey’ as a line item with no control specification, treat it as photography. Ask for the control schematic, GSD, RMS on check points, and the CAD/GIS formats the designer will actually open.",
     ],
   },
@@ -560,7 +560,7 @@ export const articles: Article[] = [
     body: [
       "A mill test certificate is a claim. Witnessing a heat, a weld procedure or a coating DFT is evidence. True Certificate writes inspection so that a lender’s engineer or a commissioning manager can see what was held, what was waived, and who signed.",
       "The inspection test plan should be agreed before the purchase order, not after the consignment leaves the shop. Stage-wise hold points — material, fabrication, coating, packing, erection — are cheaper than a blanket ‘inspect everything’ that nobody staffs.",
-      "If your PMC is also your inspector, you have a conflict even if everyone is honest. AGS keeps inspection in a distinct partner for that reason.",
+      "If your PMC is also your inspector, you have a conflict even if everyone is honest. ACE keeps inspection in a distinct partner for that reason.",
     ],
   },
 ];

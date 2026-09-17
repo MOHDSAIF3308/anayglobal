@@ -10,14 +10,14 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Technical Network",
   description:
-    "How Anay Global Services coordinates Aadhar Enviro, Archies Engineers, Biosyn, True Certificate and Volmaken Engineering Pvt. Ltd. as one technical collaboration.",
+    "How Anay Consultants & Engineers coordinates Aadhar Enviro, Archies Engineers, Biosyn, True Certificate and Volmaken Engineering Pvt. Ltd. as one technical collaboration.",
   path: "/network",
 });
 
 const model = [
   {
     title: "One lead",
-    body: "A single AGS counterpart owns the brief, the programme and the invoice trail. Partners are assigned, not auctioned.",
+    body: "A single ACE counterpart owns the brief, the programme and the invoice trail. Partners are assigned, not auctioned.",
   },
   {
     title: "Shared register",
@@ -25,7 +25,7 @@ const model = [
   },
   {
     title: "Named specialists",
-    body: "Environmental, chemical, inspection and design work is done by the partner whose letterhead the authority already recognises — under the AGS umbrella.",
+    body: "Environmental, chemical, inspection and design work is done by the partner whose letterhead the authority already recognises — under the ACE umbrella.",
   },
   {
     title: "Regional crews",
@@ -49,7 +49,7 @@ export default function NetworkPage() {
             <SectionHeading
               kicker="The model"
               title="How the file actually moves."
-              lede="Clients brief AGS. Volmaken Engineering Pvt. Ltd. coordinates. The specialist partner does the science or the drawing. Everyone signs the same assumptions."
+              lede="Clients brief ACE. Volmaken Engineering Pvt. Ltd. coordinates. The specialist partner does the science or the drawing. Everyone signs the same assumptions."
             />
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2">
@@ -77,7 +77,7 @@ export default function NetworkPage() {
           <Reveal>
             <SectionHeading
               kicker="Partners"
-              title="The five practices under AGS."
+              title="The five practices under ACE."
             />
           </Reveal>
           <div className="mt-14 grid gap-5 lg:grid-cols-5">

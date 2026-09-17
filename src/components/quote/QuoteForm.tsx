@@ -170,7 +170,7 @@ export function QuoteForm({
           {status === "submitting" ? "Sending…" : "Submit request"}
         </Button>
         <p className="mt-3 text-xs leading-relaxed text-muted">
-          No marketing list. The request goes to the AGS technical desk and, if
+          No marketing list. The request goes to the ACE technical desk and, if
           configured, onward by email via a Cloudflare Worker.
         </p>
       </div>

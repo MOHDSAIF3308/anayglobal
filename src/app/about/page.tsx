@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "About Us",
-  description: `The story of Anay Global Services — established ${site.founded} in Indore as an integrated technical collaboration across Central India.`,
+  description: `The story of Anay Consultants & Engineers — established ${site.founded} in Indore as an integrated technical collaboration across Central India.`,
   path: "/about",
 });
 
@@ -16,7 +16,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        kicker="About AGS"
+        kicker="About ACE"
         title="A specialized engineering practice built for data integrity — not a holding company slide."
         lede={`Established in ${site.founded} with headquarters in Indore: consulting, inspection, surveying and testing under one client conversation.`}
         image="/images/about-building.jpg"
@@ -33,7 +33,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal className="space-y-5 text-base leading-relaxed text-stone lg:col-span-7">
               <p>
-                Anay Global Services was established in 2024 as a dedicated engineering
+                Anay Consultants & Engineers was established in 2024 as a dedicated engineering
                 practice based in Indore, founded on the principle that infrastructure decisions
                 must be rooted in verifiable, audit-grade data rather than assumptions.
               </p>
@@ -43,7 +43,7 @@ export default function AboutPage() {
                 work directly with site conditions to deliver clear, actionable reports.
               </p>
               <p>
-                Headquartered at Bhawar Kuan Square in Indore, AGS unites five specialist
+                Headquartered at Bhawar Kuan Square in Indore, ACE unites five specialist
                 practices under one cohesive banner. Whether managing a major highway corridor,
                 an industrial facility, or an institutional development, our clients work with
                 one accountable technical lead.

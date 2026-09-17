@@ -19,7 +19,7 @@ export default function ServicesPage() {
       <PageHero
         kicker="Services"
         title="Six pillars. One technical file."
-        lede="Learn more about each practice — what we test, survey, inspect or design, and which partner in the AGS network holds the pen."
+        lede="Learn more about each practice — what we test, survey, inspect or design, and which partner in the ACE network holds the pen."
         image="/images/lab-detail.jpg"
       />
       <section className="topo-bg py-20 sm:py-24">
