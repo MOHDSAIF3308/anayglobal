@@ -4,7 +4,7 @@ Premium marketing site for **Anay Consultants & Engineers** — an integrated te
 
 Canonical public URL: **https://www.aceanay.com/**
 
-Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes deploy to a **Cloudflare Worker** on the free tier.
+Stack: **Next.js 16 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes deploy to a **Cloudflare Worker** on the free tier.
 
 ## Local development
 
@@ -74,7 +74,7 @@ Then add runtime environment variables in **Worker → Settings → Variables an
 
 1. Set `WEB3FORMS_ACCESS_KEY` *or* `RESEND_API_KEY` as a secret. For Resend, also set `QUOTE_FROM_EMAIL`; `QUOTE_TO_EMAIL` is optional and defaults to `quotes@anayglobalservices.com`.
 2. Set compatibility flag `nodejs_compat` (already configured in `wrangler.jsonc`).
-3. Bind nothing else — no D1 / KV / R2 is required.
+3. The OpenNext cache Durable Objects are configured in `wrangler.jsonc` with SQLite migrations for the free plan; no D1 / KV / R2 binding is required.
 
 Push to `main` to deploy production. Push another branch to create a preview version.
 
