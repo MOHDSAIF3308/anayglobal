@@ -74,8 +74,8 @@ export default function OpenGraphImage() {
             color: "#D4C4B0",
           }}
         >
-          <span>Formerly Volmaken · Est. 2016</span>
-          <span>Agar-Malwa · Ujjain · Indore</span>
+          <span>Formerly Volmaken · Est. 2024</span>
+          <span>Indore · Madhya Pradesh · Central India</span>
         </div>
       </div>
     ),

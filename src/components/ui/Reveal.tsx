@@ -13,17 +13,25 @@ export function Reveal({
   delay?: number;
 }) {
   const ref = useRef<HTMLDivElement>(null);
+  const [enhanced, setEnhanced] = useState(false);
   const [show, setShow] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      !("IntersectionObserver" in window)
+    ) {
+      setEnhanced(true);
       setShow(true);
       return;
     }
 
+    // Content is visible in the server-rendered HTML. Animation is only an
+    // enhancement after hydration, so no-JavaScript users do not lose content.
+    setEnhanced(true);
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -43,7 +51,7 @@ export function Reveal({
       style={{ transitionDelay: `${delay}ms` }}
       className={cn(
         "reveal-on-scroll transition-all duration-700 ease-out",
-        show ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
+        !enhanced || show ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0",
         className,
       )}
     >

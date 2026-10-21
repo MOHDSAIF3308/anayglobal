@@ -29,8 +29,8 @@ export function Hero() {
         </p>
         <p className="mt-5 max-w-xl text-base leading-relaxed text-taupe-dark sm:text-lg">
           Consultancy, inspection, surveying and testing — one technical
-          collaboration, headquartered in Indore, and a network that
-          reports as a single file.
+          collaboration, headquartered in Indore and serving Madhya Pradesh
+          and Central India through a network that reports as a single file.
         </p>
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
           <Link

@@ -2,6 +2,8 @@
 
 Premium marketing site for **Anay Consultants & Engineers** — an integrated technical collaboration for testing, surveying, inspection and consultancy. Formerly Volmaken.
 
+Canonical public URL: **https://www.aceanay.com/**
+
 Stack: **Next.js 15 (App Router) · TypeScript · Tailwind CSS v4**. Backend routes deploy to a **Cloudflare Worker** on the free tier.
 
 ## Local development

@@ -31,7 +31,7 @@ export function ProjectCard({
             {project.name}
           </h3>
           <p className="mt-1 text-sm text-gold/90">{project.location}</p>
-          <p className="mt-3 max-h-0 overflow-hidden text-sm leading-relaxed text-taupe-dark opacity-0 transition-all duration-300 group-hover:max-h-24 group-hover:opacity-100">
+          <p className="mt-3 max-h-24 overflow-hidden text-sm leading-relaxed text-taupe-dark opacity-100 transition-all duration-300">
             {project.summary}
           </p>
         </div>

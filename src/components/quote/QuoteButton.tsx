@@ -11,8 +11,15 @@ export function QuoteButton({
 }) {
   const { openQuote } = useQuote();
   return (
-    <button type="button" onClick={openQuote} className={className}>
-      {children}
-    </button>
+    <>
+      <button type="button" onClick={openQuote} className={className}>
+        {children}
+      </button>
+      <noscript>
+        <a href="/contact" className={className}>
+          {children}
+        </a>
+      </noscript>
+    </>
   );
 }

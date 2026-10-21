@@ -78,7 +78,7 @@ export default function ResourcesPage() {
                   <div className="flex items-center justify-between gap-4">
                     <span className="kicker">{article.category}</span>
                     <span className="text-xs text-muted">
-                      {article.date} · {article.read}
+                      {article.date} · {article.read} · {article.author.name}
                     </span>
                   </div>
                   <h3 className="mt-4 font-display text-2xl text-espresso group-hover:text-brown">
