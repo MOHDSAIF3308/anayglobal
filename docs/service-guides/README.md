@@ -12,6 +12,7 @@ The copies in `public/docs/service-guides/` are the web-served downloads. The se
 - `civil-material-testing-lab.docx`
 - `chemical-product-testing.docx`
 - `environmental-services.docx`
+- `residential-commercial-building-inspection.docx`
 
 Each guide contains:
 

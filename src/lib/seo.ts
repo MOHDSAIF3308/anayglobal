@@ -3,7 +3,7 @@ import type { Article, Service } from "./content";
 import { offices, site } from "./content";
 
 const defaultTitle = `${site.name} (ACE) — ${site.tagline}`;
-const defaultDescription = `${site.name} is an integrated technical collaboration for engineering, DPR consultancy, inspection, surveying, civil material testing, chemical testing and environmental services from Indore, Madhya Pradesh.`;
+const defaultDescription = `${site.name} is an integrated technical collaboration for engineering, DPR consultancy, building inspection, inspection, surveying, civil material testing, chemical testing, environmental monitoring and MPCB consent support from Indore, Madhya Pradesh.`;
 
 function absoluteUrl(path = "/") {
   if (path === "/") return `${site.url}/`;
@@ -82,6 +82,9 @@ export const defaultMetadata: Metadata = {
     "civil engineering consultancy Indore",
     "surveying Madhya Pradesh",
     "DPR consultant",
+    "home inspection Indore",
+    "commercial building inspection Madhya Pradesh",
+    "MPCB consent consultant",
     "environmental monitoring",
     "third party inspection",
     "NABL testing",

@@ -9,7 +9,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata = pageMetadata({
   title: "Services",
   description:
-    "Six service pillars: civil material testing, environmental services, chemical and product testing, inspection and certification, surveying and geospatial, and DPR / turnkey consultancy.",
+    "Seven service pillars: building inspection, civil material testing, environmental services, chemical and product testing, inspection and certification, surveying and geospatial, and DPR / turnkey consultancy.",
   path: "/services",
 });
 
@@ -18,8 +18,8 @@ export default function ServicesPage() {
     <>
       <PageHero
         kicker="Services"
-        title="Six pillars. One technical file."
-        lede="Engineering, testing, inspection and surveying services from Indore for infrastructure, industrial and public projects across Madhya Pradesh and Central India."
+        title="Seven pillars. One technical file."
+        lede="Engineering, testing, inspection, surveying and building-condition services from Indore for homes, commercial assets, infrastructure and public projects across Madhya Pradesh and Central India."
         image="/images/lab-detail.jpg"
       />
       <section className="topo-bg py-20 sm:py-24">

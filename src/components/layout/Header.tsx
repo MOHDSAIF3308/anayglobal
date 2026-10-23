@@ -14,8 +14,11 @@ export function Header() {
   const pathname = usePathname();
   const overlay = pathname === "/";
   const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileMenu, setMobileMenu] = useState({ pathname, open: false });
+  const [servicesMenu, setServicesMenu] = useState({ pathname, open: false });
+
+  const mobileOpen = mobileMenu.pathname === pathname && mobileMenu.open;
+  const servicesOpen = servicesMenu.pathname === pathname && servicesMenu.open;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -23,11 +26,6 @@ export function Header() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  useEffect(() => {
-    setMobileOpen(false);
-    setServicesOpen(false);
-  }, [pathname]);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -62,8 +60,8 @@ export function Header() {
               <div
                 key={item.href}
                 className="relative"
-                onMouseEnter={() => setServicesOpen(true)}
-                onMouseLeave={() => setServicesOpen(false)}
+                onMouseEnter={() => setServicesMenu({ pathname, open: true })}
+                onMouseLeave={() => setServicesMenu({ pathname, open: false })}
               >
                 <Link
                   href="/services"
@@ -137,7 +135,7 @@ export function Header() {
             )}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
-            onClick={() => setMobileOpen((v) => !v)}
+            onClick={() => setMobileMenu({ pathname, open: !mobileOpen })}
           >
             {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>

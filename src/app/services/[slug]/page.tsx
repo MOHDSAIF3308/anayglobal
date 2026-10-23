@@ -87,6 +87,26 @@ export default async function ServiceDetailPage({ params }: Props) {
                   sizes="(min-width: 1024px) 58vw, 100vw"
                 />
               </div>
+              {service.gallery && service.gallery.length > 0 ? (
+                <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                  {service.gallery.map((image) => (
+                    <figure key={image.src} className="border border-taupe bg-cream-dark">
+                      <div className="relative aspect-[16/10] overflow-hidden bg-espresso">
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          fill
+                          className="object-cover"
+                          sizes="(min-width: 1024px) 29vw, (min-width: 640px) 50vw, 100vw"
+                        />
+                      </div>
+                      <figcaption className="p-3 text-xs leading-relaxed text-stone">
+                        {image.caption}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
             </div>
             <aside className="lg:col-span-5">
               <div className="border border-taupe bg-cream-dark p-8">

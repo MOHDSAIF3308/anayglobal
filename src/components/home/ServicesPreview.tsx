@@ -14,9 +14,9 @@ export function ServicesPreview() {
           <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
             <SectionHeading
               number="01"
-              kicker="Six pillars"
+              kicker="Seven pillars"
               title="The work we put our name on."
-              lede="Each pillar is a specialist practice. Together they are one technical file — so a highway package, a plant or a public building is not split across five inboxes."
+              lede="Each pillar is a specialist practice. Together they are one technical file — so a home, commercial building, highway package or plant is not split across five inboxes."
             />
             <Link
               href="/services"

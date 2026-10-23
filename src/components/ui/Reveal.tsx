@@ -20,18 +20,19 @@ export function Reveal({
     const el = ref.current;
     if (!el) return;
 
-    if (
-      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
-      !("IntersectionObserver" in window)
-    ) {
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const supportsObserver = "IntersectionObserver" in window;
+    const enableAnimation = window.requestAnimationFrame(() => {
       setEnhanced(true);
-      setShow(true);
-      return;
+      if (reducedMotion || !supportsObserver) setShow(true);
+    });
+
+    if (reducedMotion || !supportsObserver) {
+      return () => window.cancelAnimationFrame(enableAnimation);
     }
 
     // Content is visible in the server-rendered HTML. Animation is only an
     // enhancement after hydration, so no-JavaScript users do not lose content.
-    setEnhanced(true);
     const io = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -42,7 +43,10 @@ export function Reveal({
       { threshold: 0.12, rootMargin: "0px 0px -48px 0px" },
     );
     io.observe(el);
-    return () => io.disconnect();
+    return () => {
+      window.cancelAnimationFrame(enableAnimation);
+      io.disconnect();
+    };
   }, []);
 
   return (

@@ -26,7 +26,7 @@ npm run lint
 | --- | --- |
 | `/` | Home — hero, trust bar, services, network, industries, stats, testimonials |
 | `/about` | Story, journey timeline, mission / vision / values |
-| `/services` | Six service pillars |
+| `/services` | Seven service pillars |
 | `/services/[slug]` | Pillar detail |
 | `/network` | Collaborative model and partner cards |
 | `/projects` | Sector work, stats, client names, testimonials |
